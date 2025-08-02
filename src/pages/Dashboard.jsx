@@ -20,7 +20,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const response = await axios.get(`${import.meta.env.VITE_BACKEND_DOMAIN}/api/dashboard/`);
+        const response = await axios.get(`/api/dashboard/`);
         setStats(response.data);
         setError(null);
       } catch (error) {
